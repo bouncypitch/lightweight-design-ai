@@ -11,7 +11,7 @@ import type { Viewer, Shot } from './viewer';
 
 const USD_PER_KG = 7000; // SpaceX rideshare list price, a citation constant
 const G = 9.81;
-const REPO = 'https://github.com/bouncypitch/every-gram';
+const REPO = 'https://github.com/bouncypitch/every-gram-lightweight-design-ai';
 const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 const esc = (s: unknown) => String(s ?? '').replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
@@ -236,7 +236,7 @@ export function createStory(ctx: Ctx) {
     return `<footer class="st-foot">
       <p>Robot models and designs derived from them are adapted from <a href="${esc(doc.robot.source)}" rel="noreferrer">Berkeley Humanoid Lite</a> by HybridRobotics, under <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noreferrer">CC BY-SA 4.0</a>.</p>
       <p>Results are simulations under stated load and material assumptions, not physical tests.</p>
-      <p><a href="${REPO}" rel="noreferrer">github.com/bouncypitch/every-gram</a></p>
+      <p><a href="${REPO}" rel="noreferrer">github.com/bouncypitch/every-gram-lightweight-design-ai</a></p>
     </footer>`;
   }
 
